@@ -1,0 +1,12 @@
+[project]
+name = "jarvis-frontend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "autopep8>=2.3.2",
+    "jupyter>=1.1.1",
+    "kivy>=2.3.1",
+    "notebook>=7.4.3",
+]

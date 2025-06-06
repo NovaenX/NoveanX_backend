@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "FastAPI Dev Server",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"fastapi",
+				"dev",
+				"src/main.py"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"detail": "Run FastAPI server using uv with dev mode"
+		}
+	]
+}
