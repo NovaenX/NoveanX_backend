@@ -1,11 +1,6 @@
+from typing import Optional
 from sqlmodel import SQLModel
 from datetime import datetime
-
-
-class FoodLogCreate(SQLModel):
-    food_name: str
-    calories: float = 0
-    protein: float = 0
 
 
 class FoodLogRead(SQLModel):
@@ -14,3 +9,10 @@ class FoodLogRead(SQLModel):
     calories: float
     protein: float
     created_at: datetime
+
+
+class FoodLogCreate(SQLModel):
+    food_name: Optional[str] = None
+    calories: Optional[float] = None
+    protein: Optional[float] = None
+    created_at: Optional[datetime] = None

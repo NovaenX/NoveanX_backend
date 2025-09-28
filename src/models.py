@@ -6,7 +6,7 @@ from sqlmodel import SQLModel, Field
 class FoodLog(SQLModel, table=True):
     __tablename__ = "food_logs"
     id: int | None = Field(default=None, primary_key=True)
-    food_name: str = Field(index=True, unique=True)
+    food_name: str = Field(index=True)
     calories: float = Field(default=0.0)
     protein: float = Field(default=0.0)
     created_at: datetime = Field(
