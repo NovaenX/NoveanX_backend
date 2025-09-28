@@ -12,7 +12,7 @@ class FoodLogCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = FoodLog
         fields = ["food_name", "calories", "protein"]
-        read_only_fields = ['id']
+        read_only_fields = ['id', "created_date"]
 
 
 class FoodLogUpdateSerializer(serializers.ModelSerializer):

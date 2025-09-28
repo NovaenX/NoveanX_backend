@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "food_tracker",
+    "workout_tracker",
     "django_filters"
 ]
 

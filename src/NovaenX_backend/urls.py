@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('food_tracker.urls')),
+    path('api/workout_tracker/', include('workout_tracker.urls')),
 ]

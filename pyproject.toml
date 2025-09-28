@@ -1,5 +1,5 @@
 [project]
-name = "jarvis"
+name = "novaenx_frontend"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,5 +9,8 @@ dependencies = [
     "django>=5.2.6",
     "django-filter>=25.1",
     "djangorestframework>=3.16.1",
+    "jupyter>=1.1.1",
+    "notebook>=7.4.7",
     "pytz>=2025.2",
+    "requests>=2.32.5",
 ]

@@ -18,5 +18,11 @@ class FoodLog(models.Model):
     class Meta:
         db_table = "food_logs"
 
+    def save(self, *args, **kwargs):
+        # Ensure created_date doesn't have microseconds
+        if self.created_date:
+            self.created_date = self.created_date.replace(microsecond=0)
+        super().save(*args, **kwargs)
+
     def __str__(self):
-        return self.food_name
+        return f"{self.food_name} - {self.calories} cal"
